@@ -1,0 +1,447 @@
+<!DOCTYPE HTML>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title>Chong Bao</title>
+  
+  <meta name="author" content="Chong Bao">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<!-- <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>"> -->
+  <link rel="icon" type="image/png" href="images/icon.png">
+</head>
+
+<body>
+  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <tr style="padding:0px">
+      <td style="padding:0px">
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr style="padding:0px">
+            <td style="padding:2.5%;width:63%;vertical-align:middle">
+              <p style="text-align:center">
+                <name>Chong Bao</name>
+              </p>
+              <p>I am a third-year Ph.D. student at the State Key Lab of CAD&CG, Zhejiang
+University, advised by <a href="http://www.cad.zju.edu.cn/home/gfzhang/">Prof. Guofeng Zhang</a> and <a href="https://zhpcui.github.io/">Prof. Zhaopeng Cui</a>.
+              </p>
+              <p>
+My research interests are in 3D computer vision and AR/VR, specifically neural
+rendering, structure from motion, and SLAM.  
+              </p>
+              <p style="text-align:center">
+                <a href="mailto:chongbao@zju.edu.cn">Email</a> &nbsp/&nbsp
+                <!-- <a href="...">CV</a> &nbsp/&nbsp -->
+                <!-- <a href="...">Bio</a> &nbsp/&nbsp -->
+                <a href="https://scholar.google.com/citations?user=HRHCYq0AAAAJ">Google Scholar</a> &nbsp/&nbsp
+                <!-- <a href="">Twitter</a> &nbsp/&nbsp -->
+                <a href="https://github.com/chobao">Github</a>
+              </p>
+            </td>
+            <td style="padding:2.5%;width:40%;max-width:40%">
+              <a href="images/myphoto_bgblur.png"><img style="width:100%;max-width:70%" alt="profile photo" src="images/myphoto.png" class="hoverZoomLink"></a>
+            </td>
+          </tr>
+        </tbody></table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <heading>Research</heading>
+              <!-- <p>
+                I'm interested in computer vision, machine learning, optimization, and image processing. Much of my research is about inferring the physical world (shape, motion, color, light, etc) from images. Representative papers are <span class="highlight">highlighted</span>.
+              </p> -->
+            </td>
+          </tr>
+        </tbody></table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+          <tr onmouseout="sine_stop()" onmouseover="sine_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='sine_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/sine/teaser.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/sine/teaser.png' width=160>
+              </div>
+              <script type="text/javascript">
+                function sine_start() {
+                  document.getElementById('sine_image').style.opacity = "1";
+                }
+
+                function sine_stop() {
+                  document.getElementById('sine_image').style.opacity = "0";
+                }
+                sine_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="">
+                <papertitle>        
+                  SINE: Semantic-driven Image-based NeRF Editing with Prior-guided Editing Field
+          </papertitle>
+              </a>
+              <br>
+              <strong>Chong Bao*</strong>,
+              <a href="https://www.zhangyinda.com/">Yinda Zhang*</a>,
+              <a href="https://ybbbbt.com">Bangbang Yang*</a>,
+              <a href="https://scholar.google.com/citations?user=siv1RXUAAAAJ&hl=zh-CN">Tianxing Fan</a>,
+              <a href="https://github.com/YZsZY">Zesong Yang</a>,
+              <a href="http://www.cad.zju.edu.cn/home/bao/">Hujun Bao</a>,
+              <a href="http://www.cad.zju.edu.cn/home/gfzhang/">Guofeng Zhang</a>,
+              <a href="https://zhpcui.github.io/">Zhaopeng Cui</a>
+
+              <br>
+              <em>CVPR</em>, 2023
+              <br>
+              <!-- <a href="https://zju3dv.github.io/neumesh/">project page</a>
+              /
+              <a href="https://arxiv.org/abs/2207.11911">arXiv</a>
+              /
+              <a href="https://www.youtube.com/watch?v=8Td3Oy7y_Sc&embeds_euri=https%3A%2F%2Fzju3dv.github.io%2F&source_ve_path=MjM4NTE&feature=emb_title">video</a>
+              /
+              <a href="https://github.com/zju3dv/neumesh/">code</a> -->
+              <p></p>
+              <p>
+We present
+a novel semantic-driven NeRF editing approach, which enables users to edit a neural radiance field with a single image. 
+              </p>
+            </td>
+          </tr>
+
+          <tr onmouseout="ecsfm_stop()" onmouseover="ecsfm_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='ecsfm_image'>
+                  <img src='images/ecsfm/teaser_2.png' width="160"></div>
+                <img src='images/ecsfm/teaser_1.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function ecsfm_start() {
+                  document.getElementById('ecsfm_image').style.opacity = "1";
+                }
+
+                function ecsfm_stop() {
+                  document.getElementById('ecsfm_image').style.opacity = "0";
+                }
+                ecsfm_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/pdf/2302.10544.pdf">
+                <papertitle>EC-SfM: Efficient Covisibility-based Structure-from-Motion for Both Sequential and Unordered Images</papertitle>
+              </a>
+              <br>
+              <a href="https://github.com/oneLOH">Zhichao Ye</a>, 
+              <strong>Chong Bao</strong>,
+              <a href="">Xin Zhou</a>,
+              <a href="">Haomin Liu</a>,
+              <a href="http://www.cad.zju.edu.cn/home/bao/">Hujun Bao</a>,
+              <a href="http://www.cad.zju.edu.cn/home/gfzhang/">Guofeng Zhang</a>
+              <br>
+              <em>arXiv</em>, 2023
+              <br>
+              <a href="https://arxiv.org/pdf/2302.10544.pdf">arXiv</a>
+              <p></p>
+              <p>
+We 
+present an efficient covisibility-based incremental
+SfM and exploit covisibility
+and registration dependency to describe the image connection 
+              </p>
+            </td>
+          </tr>		
+        
+
+          <tr onmouseout="intrinsicnerf_stop()" onmouseover="intrinsicnerf_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='intrinsicnerf_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/intrinsicnerf/teaser.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/intrinsicnerf/teaser.jpeg' width=160>
+              </div>
+              <script type="text/javascript">
+                function intrinsicnerf_start() {
+                  document.getElementById('intrinsicnerf_image').style.opacity = "1";
+                }
+
+                function intrinsicnerf_stop() {
+                  document.getElementById('intrinsicnerf_image').style.opacity = "0";
+                }
+                intrinsicnerf_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://zju3dv.github.io/intrinsic_nerf/">
+                <papertitle>IntrinsicNeRF:
+Learning Intrinsic Neural Radiance Fields for Editable Novel View Synthesis
+          </papertitle>
+              </a>
+              <br>
+              <a href="https://ywcmaike.github.io/">Weicai Ye*</a>,
+              <a href="https://github.com/Eric3778">Shuo Chen*</a>,
+              <strong>Chong Bao</strong>,
+              <a href="http://www.cad.zju.edu.cn/home/bao/">Hujun Bao</a>,
+              <a href="https://people.inf.ethz.ch/pomarc/">Marc Pollefeys</a>,
+              <a href="https://zhpcui.github.io/">Zhaopeng Cui</a>,
+              <a href="http://www.cad.zju.edu.cn/home/gfzhang/">Guofeng Zhang</a>
+
+              <br>
+              <em>arXiv</em>, 2022
+              <br>
+              <a href="https://zju3dv.github.io/intrinsic_nerf/">project page</a>
+              /
+              <a href="https://arxiv.org/abs/2210.00647">arXiv</a>
+              /
+              <a href="https://github.com/zju3dv/IntrinsicNeRF">code</a>
+              <p></p>
+              <p>
+We  introduce intrinsic decomposition into the
+NeRF-based neural rendering method and can perform editable novel view synthesis in room-scale scenes.
+              </p>
+            </td>
+          </tr>
+				
+      
+          <tr onmouseout="neumesh_stop()" onmouseover="neumesh_start()"  bgcolor="#ffffd0">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='neumesh_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/neumesh/teaser.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/neumesh/teaser.jpeg' width=160>
+              </div>
+              <script type="text/javascript">
+                function neumesh_start() {
+                  document.getElementById('neumesh_image').style.opacity = "1";
+                }
+
+                function neumesh_stop() {
+                  document.getElementById('neumesh_image').style.opacity = "0";
+                }
+                neumesh_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://zju3dv.github.io/neumesh/">
+                <papertitle>NeuMesh: Learning Disentangled Neural Mesh-based Implicit Field
+          for Geometry and Texture Editing
+          </papertitle>
+              </a>
+              <br>
+              <a href="https://ybbbbt.com">Bangbang Yang*</a>,
+              <strong>Chong Bao*</strong>,
+              <a href="https://github.com/LangHiKi/">Junyi Zeng</a>,
+              <a href="http://www.cad.zju.edu.cn/home/bao/">Hujun Bao</a>,
+              <a href="https://www.zhangyinda.com/">Yinda Zhang</a>,
+              <a href="https://zhpcui.github.io/">Zhaopeng Cui</a>,
+              <a href="http://www.cad.zju.edu.cn/home/gfzhang/">Guofeng Zhang</a>
+
+              <br>
+              <em>ECCV</em>, 2022 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
+              <br>
+              <a href="https://zju3dv.github.io/neumesh/">project page</a>
+              /
+              <a href="https://arxiv.org/abs/2207.11911">arXiv</a>
+              /
+              <a href="https://www.youtube.com/watch?v=8Td3Oy7y_Sc&embeds_euri=https%3A%2F%2Fzju3dv.github.io%2F&source_ve_path=MjM4NTE&feature=emb_title">video</a>
+              /
+              <a href="https://github.com/zju3dv/neumesh/">code</a>
+              <p></p>
+              <p>
+          We present a novel mesh-based implicit field with disentangled geometry and texture codes on mesh vertices, which facilitates a set of editing functionalities.
+              </p>
+            </td>
+          </tr>
+		  
+          <tr onmouseout="cmgg_stop()" onmouseover="cmgg_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='cmgg_image'>
+                  <img src='images/cmgg/teaser_1.png' width="160"></div>
+                <img src='images/cmgg/teaser_2.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function cmgg_start() {
+                  document.getElementById('cmgg_image').style.opacity = "1";
+                }
+
+                function cmgg_stop() {
+                  document.getElementById('cmgg_image').style.opacity = "0";
+                }
+                cmgg_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://ieeexplore.ieee.org/document/9811743">
+                <papertitle>Crossview Mapping with Graph-based Geolocalization on City-Scale Street Maps</papertitle>
+              </a>
+              <br>
+              <a href="https://github.com/oneLOH">Zhichao Ye</a>, 
+              <strong>Chong Bao</strong>,
+              <a href="">Xinyang Liu</a>,
+              <a href="http://www.cad.zju.edu.cn/home/bao/">Hujun Bao</a>,
+              <a href="https://zhpcui.github.io/">Zhaopeng Cui</a>,
+              <a href="http://www.cad.zju.edu.cn/home/gfzhang/">Guofeng Zhang</a>
+              <br>
+              <em>ICRA</em>, 2022
+              <br>
+              <a href="https://ieeexplore.ieee.org/document/9811743">paper</a>
+              <p></p>
+              <p>
+We present
+a low-cost mapping solution that is able to refine and align
+the monocular reconstructed point cloud given a public street
+map. 
+              </p>
+            </td>
+          </tr>		
+
+          <tr onmouseout="arcargo_stop()" onmouseover="arcargo_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <!-- <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px"> -->
+              <div class="one">
+                <div class="two" id='arcargo_image'>
+                  <img src='images/arcargo/teaser_1.png' width="160">
+                </div>
+                <img src='images/arcargo/teaser_2.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function arcargo_start() {
+                  document.getElementById('arcargo_image').style.opacity = "1";
+                }
+
+                function arcargo_stop() {
+                  document.getElementById('arcargo_image').style.opacity = "0";
+                }
+                arcargo_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://ieeexplore.ieee.org/abstract/document/9730267">
+                <papertitle>ARCargo: Multi-Device Integrated Cargo Loading Management System with Augmented Reality</papertitle>
+              </a>
+              <br>
+              <a href="">Tianxiang Zhang*</a>, 
+              <strong>Chong Bao*</strong>,
+              <a href="https://zhaihongjia.github.io/">Hongjia Zhai*</a>,
+              <a href="">Jiazhen Xia</a>,
+              <a href="https://ywcmaike.github.io/">Weicai Ye</a>,
+              <a href="http://www.cad.zju.edu.cn/home/gfzhang/">Guofeng Zhang</a>
+              <br>
+              <em>CyberSciTech</em>, 2021
+              <br>
+              <a href="https://ieeexplore.ieee.org/abstract/document/9730267">paper</a>
+              /
+              <a href="https://www.youtube.com/watch?v=La7TNMIDWvY">video</a>
+              <p></p>
+              <p>
+We present a multi-device integrated cargo loading management system with AR, which monitors cargoes by fusing perceptual information from multiple devices in real-time.
+              </p>
+            </td>
+          </tr>		
+          
+        </tbody></table>
+
+				
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
+          <tr>
+            <td>
+              <heading>Experiences</heading>
+            </td>
+          </tr>
+        </tbody></table>
+        <table width="100%" align="center" border="0" cellpadding="20"><tbody>
+          <tr>
+            <!-- <td style="padding:20px;width:25%;vertical-align:middle"><img src="images/sensetime_lego.png"></td> -->
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/sensetime.png" alt="sensetime" width="160"></td>
+            <td width="75%" valign="center">
+              <!-- <a >[2020.07-2020.09]  Computer Vision Algorithm Intern, Multi-sensor Fusion Localization Group, Sensetime</a> -->
+              Research Intern
+              <br>Multi-sensor Fusion Localization Group, <a href="https://www.sensetime.com/">Sensetime</a>
+              <br> 2020.07-2020.09
+            </td>
+          </tr>
+          <tr>
+            <!-- <td style="padding:20px;width:25%;vertical-align:middle"><img src="images/sensetime_lego.png"></td> -->
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/Microsoft_Research_Asia_logo.png" alt="sensetime" width="160"></td>
+            <td width="75%" valign="center">
+              Research Intern(Star of Tomorrow)
+              <br> Internet Graphics Group, <a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-asia/">Microsoft Research Asia(MSRA)</a>
+              <br> 2020.04-2020.07
+              <br>
+            </td>
+          </tr>
+					
+
+					
+					
+        </tbody></table>
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
+          <tr>
+            <td>
+              <heading>Projects</heading>
+            </td>
+          </tr>
+        </tbody></table>
+
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
+          <tr onmouseout="arct_stop()" onmouseover="arct_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='arct_image'>
+                  <img src='images/arct/lego.png' width="160"></div>
+                <img src='images/arct/lego.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function arct_start() {
+                  document.getElementById('arct_image').style.opacity = "1";
+                }
+
+                function arct_stop() {
+                  document.getElementById('arct_image').style.opacity = "0";
+                }
+                arct_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://apps.apple.com/us/app/arct/id1596576437">
+                <papertitle>ARCT</papertitle>
+              </a>
+              <br>
+              <a href="https://github.com/ZibYang">Ziyang Zhang</a>, 
+              <strong>Chong Bao</strong>,
+              <a href="https://garylidd.github.io/">Hai Li</a>,
+              <br>
+              <em>First prize in China Mobile Application Innovation Competition, held by Apple.
+</em>, 2022
+              <br>
+              <a href="https://apps.apple.com/us/app/arct/id1596576437">appstore</a>
+              <p></p>
+              <p>
+                We develop a platform realizing augmented urban reality based on scene localization.
+              </p>
+            </td>
+          </tr>		
+        </tbody></table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+            <td style="padding:0px">
+              <br>
+              <p style="text-align:center;font-size:small;">
+                Design and source code from <a style="font-size:small;" href="https://jonbarron.info">Jon Barron's website</a>
+              </p>
+            </td>
+          </tr>
+        </tbody></table>
+      </td>
+    </tr>
+  </table>
+</body>
+
+</html>
