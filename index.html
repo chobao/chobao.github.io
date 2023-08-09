@@ -54,6 +54,110 @@ rendering, structure from motion, and SLAM.
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+          <tr onmouseout="mirrornerf_stop()" onmouseover="mirrornerf_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='mirrornerf_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/mirror-nerf/teaser.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/mirror-nerf/teaser.png' width=160>
+              </div>
+              <script type="text/javascript">
+                function mirrornerf_start() {
+                  document.getElementById('mirrornerf_image').style.opacity = "1";
+                }
+
+                function mirrornerf_stop() {
+                  document.getElementById('mirrornerf_image').style.opacity = "0";
+                }
+                mirrornerf_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://zju3dv.github.io/Mirror-NeRF/">
+                <papertitle>Mirror-NeRF: 
+                  Learning Neural Radiance Fields for Mirrors with Whitted-Style Ray Tracing
+          </papertitle>
+              </a>
+              <br>
+              <a href="https://zjy-zju.github.io/">Junyi Zeng*</a>,
+              <strong>Chong Bao*</strong>,
+              <a href="https://github.com/rabbitchenrui">Rui Chen</a>
+              <a href="https://scholar.google.com/citations?user=GHOQKCwAAAAJ&hl=en&oi=ao">Zilong Dong</a>
+              <a href="http://www.cad.zju.edu.cn/home/gfzhang/">Guofeng Zhang</a>
+              <a href="http://www.cad.zju.edu.cn/home/bao/">Hujun Bao</a>,
+              <a href="https://zhpcui.github.io/">Zhaopeng Cui</a>,
+
+              <br>
+              <em>MM</em>, 2023
+              <br>
+              <a href="https://zju3dv.github.io/Mirror-NeRF/">project page</a>
+              /
+              <a href="https://arxiv.org/abs/2308.03280">arXiv</a>
+              /
+              <a href="https://www.youtube.com/watch?v=gyGK9wnU0tc">video</a>
+              /
+              <a href="https://github.com/zju3dv/Mirror-NeRF/">code</a>
+              <p></p>
+              <p>
+We  introduce intrinsic decomposition into the
+NeRF-based neural rendering method and can perform editable novel view synthesis in room-scale scenes.
+              </p>
+            </td>
+          </tr>
+
+          <tr onmouseout="intrinsicnerf_stop()" onmouseover="intrinsicnerf_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='intrinsicnerf_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/intrinsicnerf/teaser.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/intrinsicnerf/teaser.jpeg' width=160>
+              </div>
+              <script type="text/javascript">
+                function intrinsicnerf_start() {
+                  document.getElementById('intrinsicnerf_image').style.opacity = "1";
+                }
+
+                function intrinsicnerf_stop() {
+                  document.getElementById('intrinsicnerf_image').style.opacity = "0";
+                }
+                intrinsicnerf_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://zju3dv.github.io/intrinsic_nerf/">
+                <papertitle>IntrinsicNeRF:
+                  Learning Intrinsic Neural Radiance Fields for Editable Novel View Synthesis
+                </papertitle>
+                    </a>
+                    <br>
+                    <a href="https://ywcmaike.github.io/">Weicai Ye*</a>,
+                    <a href="https://github.com/Eric3778">Shuo Chen*</a>,
+                    <strong>Chong Bao</strong>,
+                    <a href="http://www.cad.zju.edu.cn/home/bao/">Hujun Bao</a>,
+                    <a href="https://people.inf.ethz.ch/pomarc/">Marc Pollefeys</a>,
+                    <a href="https://zhpcui.github.io/">Zhaopeng Cui</a>,
+                    <a href="http://www.cad.zju.edu.cn/home/gfzhang/">Guofeng Zhang</a>
+                  
+                    <br>
+                    <em>ICCV</em>, 2023
+                    <br>
+                    <a href="https://zju3dv.github.io/intrinsic_nerf/">project page</a>
+                    /
+                    <a href="https://arxiv.org/abs/2210.00647">arXiv</a>
+                    /
+                    <a href="https://github.com/zju3dv/IntrinsicNeRF">code</a>
+              <p></p>
+              <p>
+We  introduce intrinsic decomposition into the
+NeRF-based neural rendering method and can perform editable novel view synthesis in room-scale scenes.
+              </p>
+            </td>
+          </tr>
+
           <tr onmouseout="sine_stop()" onmouseover="sine_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
@@ -138,8 +242,10 @@ a novel semantic-driven NeRF editing approach, which enables users to edit a neu
               <a href="http://www.cad.zju.edu.cn/home/bao/">Hujun Bao</a>,
               <a href="http://www.cad.zju.edu.cn/home/gfzhang/">Guofeng Zhang</a>
               <br>
-              <em>arXiv</em>, 2023
+              <em>TCSVT</em>, 2023
               <br>
+              <a href="https://ieeexplore.ieee.org/document/10148998">paper</a>
+              /
               <a href="https://arxiv.org/pdf/2302.10544.pdf">arXiv</a>
               /
               <a href="https://github.com/openxrlab/xrsfm">code</a>
@@ -154,56 +260,6 @@ and registration dependency to describe the image connection
           </tr>		
         
 
-          <tr onmouseout="intrinsicnerf_stop()" onmouseover="intrinsicnerf_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='intrinsicnerf_image'><video  width=100% height=100% muted autoplay loop>
-                <source src="images/intrinsicnerf/teaser.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video></div>
-                <img src='images/intrinsicnerf/teaser.jpeg' width=160>
-              </div>
-              <script type="text/javascript">
-                function intrinsicnerf_start() {
-                  document.getElementById('intrinsicnerf_image').style.opacity = "1";
-                }
-
-                function intrinsicnerf_stop() {
-                  document.getElementById('intrinsicnerf_image').style.opacity = "0";
-                }
-                intrinsicnerf_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://zju3dv.github.io/intrinsic_nerf/">
-                <papertitle>IntrinsicNeRF:
-Learning Intrinsic Neural Radiance Fields for Editable Novel View Synthesis
-          </papertitle>
-              </a>
-              <br>
-              <a href="https://ywcmaike.github.io/">Weicai Ye*</a>,
-              <a href="https://github.com/Eric3778">Shuo Chen*</a>,
-              <strong>Chong Bao</strong>,
-              <a href="http://www.cad.zju.edu.cn/home/bao/">Hujun Bao</a>,
-              <a href="https://people.inf.ethz.ch/pomarc/">Marc Pollefeys</a>,
-              <a href="https://zhpcui.github.io/">Zhaopeng Cui</a>,
-              <a href="http://www.cad.zju.edu.cn/home/gfzhang/">Guofeng Zhang</a>
-
-              <br>
-              <em>arXiv</em>, 2022
-              <br>
-              <a href="https://zju3dv.github.io/intrinsic_nerf/">project page</a>
-              /
-              <a href="https://arxiv.org/abs/2210.00647">arXiv</a>
-              /
-              <a href="https://github.com/zju3dv/IntrinsicNeRF">code</a>
-              <p></p>
-              <p>
-We  introduce intrinsic decomposition into the
-NeRF-based neural rendering method and can perform editable novel view synthesis in room-scale scenes.
-              </p>
-            </td>
-          </tr>
 				
       
           <tr onmouseout="neumesh_stop()" onmouseover="neumesh_start()"  bgcolor="#ffffd0">
