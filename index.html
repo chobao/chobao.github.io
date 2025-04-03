@@ -23,11 +23,17 @@
               </p>
               <p>I am a Ph.D. student (2020-now) at the State Key Lab of CAD&CG, Zhejiang
 University, advised by <a href="http://www.cad.zju.edu.cn/home/gfzhang/">Prof. Guofeng Zhang</a> and <a href="https://zhpcui.github.io/">Prof. Zhaopeng Cui</a>.
-Now, I am a visiting student at ETH Zürich, advised by <a href="https://people.inf.ethz.ch/marc.pollefeys/">Marc Pollefeys</a>.
+During my Ph.D., I work closely with <a href="https://www.zhangyinda.com/">Yinda Zhang</a>.
+I used to visit Computer Vision and Geometry Group at ETH Zürich, advised by <a href="https://people.inf.ethz.ch/marc.pollefeys/">Marc Pollefeys</a>.
+
               </p>
               <p>
 <!-- I am interested in neural rendering, structure from motion and AR/VR. My current research topic is neural radiance field editing. -->
 My research interests are in 3D computer vision and AR/VR, specifically neural rendering, structure from motion, and human avatar.
+              </p>
+
+ <p style="color: red; font-weight: bold;">
+                I will graduate in 2025 and am looking for a job in academia or industry.
               </p>
               <p style="text-align:center">
                 <a href="mailto:chongbao@zju.edu.cn">Email</a> &nbsp/&nbsp
@@ -54,6 +60,106 @@ My research interests are in 3D computer vision and AR/VR, specifically neural r
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+  
+
+          <tr onmouseout="free360_stop()" onmouseover="free360_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='free360_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/free360/teaser.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/free360/teaser.png' width=160>
+              </div>
+              <script type="text/javascript">
+                function free360_start() {
+                  document.getElementById('free360_image').style.opacity = "1";
+                }
+
+                function free360_stop() {
+                  document.getElementById('free360_image').style.opacity = "0";
+                }
+                free360_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://zju3dv.github.io/free360/">
+                <papertitle>Free360: Layered Gaussian Splatting for Unbounded 360-Degree View Synthesis from Extremely Sparse and Unposed Views
+          </papertitle>
+              </a>
+              <br>
+              <strong>Chong Bao</strong>,
+              <a href="https://github.com/xyzhang77">Xiyu Zhang</a>,
+              <a href="https://niujinshuchong.github.io/">Zehao Yu</a>,
+              <a href="https://scholar.google.com/citations?user=vvW-UNMAAAAJ&hl=en">Jiale Shi</a>,
+              <a href="http://www.cad.zju.edu.cn/home/gfzhang/">Guofeng Zhang</a>,
+              <a href="https://pengsongyou.github.io/">Songyou Peng</a>,
+              <a href="https://zhpcui.github.io/">Zhaopeng Cui</a>
+
+              <br>
+              <em>CVPR</em>, 2025
+              <br>
+              <a href="https://zju3dv.github.io/free360/">project page</a>
+              /
+              <a href="https://arxiv.org/abs/2503.24382">arXiv</a>
+              /
+              <a href="https://youtu.be/hiSUzwdVHOY?si=HcN7XNKJAiyjkrOu">video</a>
+              /
+              <a href="https://github.com/chobao/Free360">code</a>
+              <p></p>
+              <p>
+            We propose a new GS with video diffusion model for novel view synthesis and surface reconstruction from extremely sparse(3-4), unposed images in unbounded 360 scenes.
+              </p>
+            </td>
+          </tr>
+      
+          <tr onmouseout="lookcloser_stop()" onmouseover="lookcloser_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='lookcloser_image'>
+                <img src='images/lookcloser/teaser1.jpg' width=160>
+                </div>
+                <img src='images/lookcloser/teaser2.jpg' width=160>
+              </div>
+              <script type="text/javascript">
+                function lookcloser_start() {
+                  document.getElementById('lookcloser_image').style.opacity = "1";
+                }
+
+                function lookcloser_stop() {
+                  document.getElementById('lookcloser_image').style.opacity = "0";
+                }
+                lookcloser_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://coscatter.github.io/LookCloser/">
+                <papertitle>LookCloser: Frequency-aware Radiance Field for Tiny-Detail Scene
+          </papertitle>
+              </a>
+              <br>
+              <a href="https://coscatter.github.io/XiaoyuZhang/">Xiaoyu Zhang</a>,
+              <a href="https://openreview.net/profile?id=~Weihong_Pan1">Weihong Pan</a>,
+              <strong>Chong Bao</strong>,
+              <a href="https://github.com/xyzhang77">Xiyu Zhang</a>,
+              <a href="">Xiaojun Xiang</a>,
+              <a href="https://sorcererq.github.io/jianghanqing/">Hanqing Jiang</a>,
+              <a href="http://www.cad.zju.edu.cn/home/bao/">Hujun Bao</a>,
+
+              <br>
+              <em>CVPR</em>, 2025
+              <br>
+              <a href="https://coscatter.github.io/LookCloser/">project page</a>
+              /
+              <a href="https://arxiv.org/abs/2503.18513">arXiv</a>
+              /
+              <a href="https://github.com/Coscatter/FrequencyAwareNeRF">code</a>
+              <p></p>
+              <p>
+              We introduce a novel frequency-aware framework for view synthesis that simultaneously captures the overall scene structure and high-definition details within a single NeRF model.
+              </p>
+            </td>
+          </tr>
 
           <tr onmouseout="geneavatar_stop()" onmouseover="geneavatar_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
@@ -469,6 +575,19 @@ We present a multi-device integrated cargo loading management system with AR, wh
           <tr>
             <!-- <td style="padding:20px;width:25%;vertical-align:middle"><img src="images/sensetime_lego.png"></td> -->
             <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/google.png" alt="google" width="160"></td>
+            <td width="75%" valign="center">
+              <!-- <a >[2020.07-2020.09]  Computer Vision Algorithm Intern, Multi-sensor Fusion Localization Group, Sensetime</a> -->
+              Student Researcher
+              <br><a href="https://arvr.google.com/">Google AR</a>
+              <br>
+              2025.03-now
+            </td>
+          </tr>
+
+          <tr>
+            <!-- <td style="padding:20px;width:25%;vertical-align:middle"><img src="images/sensetime_lego.png"></td> -->
+            <td style="padding:20px;width:25%;vertical-align:middle">
               <img src="images/ETHZ.png" alt="sensetime" width="160"></td>
             <td width="75%" valign="center">
               <!-- <a >[2020.07-2020.09]  Computer Vision Algorithm Intern, Multi-sensor Fusion Localization Group, Sensetime</a> -->
@@ -477,7 +596,7 @@ We present a multi-device integrated cargo loading management system with AR, wh
               <br> 
               supervised by <a href="https://people.inf.ethz.ch/marc.pollefeys/">Marc Pollefeys </a>
               <br>
-              2023.09-now
+              2023.09-2024.09
             </td>
           </tr>
           <tr>
