@@ -9,6 +9,23 @@
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
 	<!-- <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>"> -->
   <link rel="icon" type="image/png" href="images/icon.png">
+  <script type="text/javascript">
+    function paper_preview_start(id) {
+      const preview = document.getElementById(id);
+      const video = preview.querySelector('video');
+      preview.style.opacity = '1';
+      video.currentTime = 0;
+      video.play();
+    }
+
+    function paper_preview_stop(id) {
+      const preview = document.getElementById(id);
+      const video = preview.querySelector('video');
+      preview.style.opacity = '0';
+      video.pause();
+      video.currentTime = 0;
+    }
+  </script>
 </head>
 
 <body>
@@ -21,7 +38,7 @@
               <p style="text-align:center">
                 <name>Chong Bao</name>
               </p>
-              <p>I am a Ph.D. student (2020-now) at the State Key Lab of CAD&CG, Zhejiang
+              <p>I am a Ph.D. student (2020-2026) at the State Key Lab of CAD&CG, Zhejiang
 University, advised by <a href="http://www.cad.zju.edu.cn/home/gfzhang/">Prof. Guofeng Zhang</a> and <a href="https://zhpcui.github.io/">Prof. Zhaopeng Cui</a>.
 During my Ph.D., I work closely with <a href="https://www.zhangyinda.com/">Yinda Zhang</a>.
 I used to visit Computer Vision and Geometry Group at ETH Zürich, advised by <a href="https://people.inf.ethz.ch/marc.pollefeys/">Marc Pollefeys</a>.
@@ -29,12 +46,12 @@ I used to visit Computer Vision and Geometry Group at ETH Zürich, advised by <a
               </p>
               <p>
 <!-- I am interested in neural rendering, structure from motion and AR/VR. My current research topic is neural radiance field editing. -->
-My research interests are in 3D computer vision and AR/VR, specifically neural rendering, structure from motion, and human avatar.
+My research interests are in multimodal model, video generation, world model and 3D computer vision.
               </p>
 
- <p style="color: red; font-weight: bold;">
+ <!-- <p style="color: red; font-weight: bold;">
                 I will graduate in 2025 and am looking for a job in academia or industry.
-              </p>
+              </p> -->
               <p style="text-align:center">
                 <a href="mailto:chongbao@zju.edu.cn">Email</a> &nbsp/&nbsp
                 <!-- <a href="...">CV</a> &nbsp/&nbsp -->
@@ -60,7 +77,281 @@ My research interests are in 3D computer vision and AR/VR, specifically neural r
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-  
+
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <img src="images/archon/teaser.png" width="160" height="160" alt="Archon">
+              </div>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://zju3dv.github.io/archon/">
+                <papertitle>Archon: A Unified Multimodal Model for Holistic Digital Human Generation</papertitle>
+              </a>
+              <br>
+              <strong>Chong Bao*</strong>,
+              <a href="https://shichenliu.github.io/">Shichen Liu*</a>,
+              <a href="https://me.lj-y.com/">Lijun Yu</a>,
+              <a href="https://scholar.google.com/citations?user=ozNFrecAAAAJ&amp;hl=en">David Futschik</a>,
+              <a href="https://moschoglou.com/">Stylianos Moschoglou</a>,
+              <a href="https://chobao.github.io/">Shefali Srivastava</a>,
+              <a href="https://zqbai-jeremy.github.io/">Ziqian Bai</a>,
+              <a href="https://chobao.github.io/">Feitong Tan</a>,
+              <a href="http://www.cad.zju.edu.cn/home/gfzhang/">Guofeng Zhang</a>,
+              <a href="https://zhpcui.github.io/">Zhaopeng Cui</a>,
+              <a href="https://research.google/people/seanfanello/">Sean Fanello</a>,
+              <a href="https://www.zhangyinda.com/">Yinda Zhang</a>
+              <br>
+              <em>CVPR</em>, 2026
+              <br>
+              <a href="https://zju3dv.github.io/archon/">project page</a>
+              /
+              <a href="https://arxiv.org/abs/2605.30311">arXiv</a>
+              /
+              <a href="https://github.com/chobao/Archon">code</a>
+              <p></p>
+              <p>We present a unified multimodal model for holistic digital human generation and understanding across text, audio, motion, semantic video, image, and video.</p>
+            </td>
+          </tr>
+
+          <tr onmouseout="paper_preview_stop('lingbot_video')" onmouseover="paper_preview_start('lingbot_video')">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id="lingbot_video"><video width="160" height="160" muted loop playsinline preload="metadata">
+                  <source src="images/lingbot-video/teaser.mp4" type="video/mp4">
+                </video></div>
+                <img src="images/lingbot-video/teaser.png" width="160" height="160" alt="LingBot-Video">
+              </div>
+              <script type="text/javascript">paper_preview_stop('lingbot_video');</script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://technology.robbyant.com/lingbot-video/">
+                <papertitle>LingBot-Video: Scaling Mixture-of-Experts Video Pretraining for Embodied Intelligence</papertitle>
+              </a>
+              <br>
+              <a href="https://chobao.github.io/">Shuailei Ma*</a>,
+              <a href="https://chobao.github.io/">Jiaqi Liao*</a>,
+              <a href="https://chobao.github.io/">Xinyang Wang*</a>,
+              <a href="https://chobao.github.io/">Jingjing Wang*</a>,
+              <a href="https://chobao.github.io/">Chaoran Feng</a>,
+              <a href="https://chobao.github.io/">Zijing Hu</a>,
+              <strong>Chong Bao</strong>,
+              <a href="https://chobao.github.io/">Zichen Xi</a>,
+              <a href="https://chobao.github.io/">Yuqi Gan</a>,
+              <a href="https://chobao.github.io/">Weisen Wang</a>,
+              <a href="https://chobao.github.io/">Yanhong Zeng</a>,
+              <a href="https://chobao.github.io/">Qin Zhao</a>,
+              <a href="https://chobao.github.io/">Zifan Shi</a>,
+              <a href="https://chobao.github.io/">Wei Wu</a>,
+              <a href="https://chobao.github.io/">Hao Ouyang</a>,
+              <a href="https://chobao.github.io/">Qiuyu Wang</a>,
+              <a href="https://chobao.github.io/">Shangzhan Zhang</a>,
+              <a href="https://chobao.github.io/">Jiahao Shao</a>,
+              <a href="https://chobao.github.io/">Yipengjing Sun</a>,
+              <a href="https://chobao.github.io/">Liangxiao Hu</a>,
+              <a href="https://chobao.github.io/">Lunke Pan</a>,
+              <a href="https://chobao.github.io/">Nan Xue</a>,
+              <a href="https://chobao.github.io/">Kecheng Zheng</a>,
+              <a href="https://chobao.github.io/">Yinghao Xu</a>,
+              <a href="https://chobao.github.io/">Xing Zhu</a>,
+              <a href="https://chobao.github.io/">Yujun Shen</a>,
+              <a href="https://chobao.github.io/">Ka Leong Cheng</a>
+              <br>
+              <em>Technical Report</em>, 2026
+              <br>
+              <a href="https://technology.robbyant.com/lingbot-video/">project page</a>
+              /
+              <a href="https://arxiv.org/abs/2607.07675">arXiv</a>
+              /
+              <a href="https://github.com/Robbyant/lingbot-video">code</a>
+              <p></p>
+              <p>We scale a DiT-based mixture-of-experts video foundation model with more than 70,000 hours of embodied data for physically grounded video generation and embodied intelligence.</p>
+            </td>
+          </tr>
+
+          <tr onmouseout="paper_preview_stop('lamp_video')" onmouseover="paper_preview_start('lamp_video')">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id="lamp_video"><video width="160" height="160" muted loop playsinline preload="metadata">
+                  <source src="images/lamp/teaser.mp4" type="video/mp4">
+                </video></div>
+                <img src="images/lamp/teaser.png" width="160" height="160" alt="LAMP">
+              </div>
+              <script type="text/javascript">paper_preview_stop('lamp_video');</script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://zju3dv.github.io/LAMP/">
+                <papertitle>LAMP: Lift Image-Editing as General 3D Priors for Open-world Manipulation</papertitle>
+              </a>
+              <br>
+              <a href="https://chobao.github.io/">Jingjing Wang</a>,
+              <a href="https://chobao.github.io/">Zhengdong Hong</a>,
+              <strong>Chong Bao</strong>,
+              <a href="https://chobao.github.io/">Yuke Zhu</a>,
+              <a href="https://chobao.github.io/">Junhan Sun</a>,
+              <a href="http://www.cad.zju.edu.cn/home/gfzhang/">Guofeng Zhang</a>
+              <br>
+              <em>Preprint</em>, 2026
+              <br>
+              <a href="https://zju3dv.github.io/LAMP/">project page</a>
+              <p></p>
+              <p>We lift image-editing outputs into continuous, geometry-aware 3D transformations that serve as general priors for open-world robotic manipulation.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <img src="images/purediff/teaser.png" width="160" height="160" alt="PureDiff">
+              </div>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a><papertitle>PureDiff: Purifying Sparse-View Reconstructions with Distractors via One-Step Diffusion Model</papertitle></a>
+              <br>
+              <a href="https://chobao.github.io/">Qirui Hu</a>,
+              <a href="https://chobao.github.io/">Jingjing Wang</a>,
+              <strong>Chong Bao</strong>,
+              <a href="https://chobao.github.io/">Xiyu Zhang</a>,
+              <a href="http://www.cad.zju.edu.cn/home/bao/">Hujun Bao</a>,
+              <a href="https://zhpcui.github.io/">Zhaopeng Cui</a>,
+              <a href="http://www.cad.zju.edu.cn/home/gfzhang/">Guofeng Zhang</a>
+              <br>
+              <em>IJCNN</em>, 2026
+              <p></p>
+              <p>We introduce a one-step diffusion model that purifies sparse-view reconstructions corrupted by distractors, improving multi-view consistency and rendering quality.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <img src="images/ravig-bench/teaser.png" width="160" height="160" alt="RAViG-Bench">
+              </div>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://github.com/antgroup/ravig-bench">
+                <papertitle>RAViG-Bench: A Benchmark for Retrieval-Augmented Visually-rich Generation with Multi-modal Automated Evaluation</papertitle>
+              </a>
+              <br>
+              <a href="https://chobao.github.io/">Qirui Hu</a>,
+              <a href="https://chobao.github.io/">Shunlei Ning</a>,
+              <strong>Chong Bao</strong>,
+              <a href="https://chobao.github.io/">Guanyu Chen</a>,
+              <a href="https://chobao.github.io/">Jiaotuan Wang</a>,
+              <a href="https://chobao.github.io/">Wei Yang</a>,
+              <a href="https://chobao.github.io/">Hao Chen</a>,
+              <a href="https://chobao.github.io/">Xuepeng Jia</a>,
+              <a href="https://chobao.github.io/">Wei Zhou</a>,
+              <a href="http://www.cad.zju.edu.cn/home/gfzhang/">Guofeng Zhang</a>
+              <br>
+              <em>KDD</em>, 2026
+              <br>
+              <a href="https://github.com/antgroup/ravig-bench">code</a>
+              <p></p>
+              <p>We introduce a benchmark and multimodal automated evaluation framework for retrieval-augmented visually-rich generation, covering execution correctness, design quality, and content quality.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <img src="images/atlasgs/teaser.png" width="160" height="160" alt="AtlasGS">
+              </div>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://zju3dv.github.io/AtlasGS/">
+                <papertitle>AtlasGS: Atlanta-world Guided Surface Reconstruction with Implicit Structured Gaussians</papertitle>
+              </a>
+              <br>
+              <a href="https://github.com/xyzhang77">Xiyu Zhang*</a>, <strong>Chong Bao*</strong>,
+              <a href="https://chobao.github.io/">Yipeng Chen</a>,
+              <a href="https://zhaihongjia.github.io/">Hongjia Zhai</a>,
+              <a href="https://chobao.github.io/">Yitong Dong</a>,
+              <a href="http://www.cad.zju.edu.cn/home/bao/">Hujun Bao</a>,
+              <a href="https://zhpcui.github.io/">Zhaopeng Cui</a>,
+              <a href="http://www.cad.zju.edu.cn/home/gfzhang/">Guofeng Zhang</a>
+              <br>
+              <em>NeurIPS</em>, 2025
+              <br>
+              <a href="https://zju3dv.github.io/AtlasGS/">project page</a>
+              /
+              <a href="https://arxiv.org/abs/2510.25129">arXiv</a>
+              /
+              <a href="https://github.com/xyzhang77/AtlasGS">code</a>
+              <p></p>
+              <p>We propose an Atlanta-world guided, implicit-structured Gaussian representation for efficient and smooth surface reconstruction in indoor and urban scenes.</p>
+            </td>
+          </tr>
+
+          <tr onmouseout="paper_preview_stop('lightcity_video')" onmouseover="paper_preview_start('lightcity_video')">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id="lightcity_video"><video width="160" height="160" muted loop playsinline preload="metadata">
+                  <source src="images/lightcity/teaser.mp4" type="video/mp4">
+                </video></div>
+                <img src="images/lightcity/teaser.png" width="160" height="160" alt="LightCity">
+              </div>
+              <script type="text/javascript">paper_preview_stop('lightcity_video');</script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://23wjj.github.io/LightCity/">
+                <papertitle>LightCity: An Urban Dataset for Outdoor Inverse Rendering and Reconstruction under Multi-illumination Conditions</papertitle>
+              </a>
+              <br>
+              <a href="https://chobao.github.io/">Jingjing Wang*</a>,
+              <a href="https://chobao.github.io/">Qirui Hu*</a>,
+              <strong>Chong Bao</strong>,
+              <a href="https://chobao.github.io/">Yuke Zhu</a>,
+              <a href="http://www.cad.zju.edu.cn/home/bao/">Hujun Bao</a>,
+              <a href="https://zhpcui.github.io/">Zhaopeng Cui</a>,
+              <a href="http://www.cad.zju.edu.cn/home/gfzhang/">Guofeng Zhang</a>
+              <br>
+              <em>ICCV</em>, 2025
+              <br>
+              <a href="https://23wjj.github.io/LightCity/">project page</a>
+              /
+              <a href="https://openaccess.thecvf.com/content/ICCV2025/html/Wang_LightCity_An_Urban_Dataset_for_Outdoor_Inverse_Rendering_and_Reconstruction_ICCV_2025_paper.html">paper</a>
+              /
+              <a href="https://github.com/23wjj/LightCity">code</a>
+              <p></p>
+              <p>We present a large-scale synthetic urban dataset with diverse, controllable illumination for benchmarking intrinsic decomposition, inverse rendering, and multi-illumination reconstruction.</p>
+            </td>
+          </tr>
+
+          <tr onmouseout="paper_preview_stop('neumeshplusplus_video')" onmouseover="paper_preview_start('neumeshplusplus_video')">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id="neumeshplusplus_video"><video width="160" height="160" muted loop playsinline preload="metadata">
+                  <source src="images/neumeshplusplus/teaser.mp4" type="video/mp4">
+                </video></div>
+                <img src="images/neumeshplusplus/teaser.png" width="160" height="160" alt="NeuMesh++">
+              </div>
+              <script type="text/javascript">paper_preview_stop('neumeshplusplus_video');</script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://zju3dv.github.io/neumeshplusplus/">
+                <papertitle>NeuMesh++: Towards Versatile and Efficient Volumetric Editing with Disentangled Neural Mesh-based Implicit Field</papertitle>
+              </a>
+              <br>
+              <strong>Chong Bao*</strong>, <a href="https://y-u-a-n-l-i.github.io/">Yuan Li*</a>,
+              <a href="https://ybbbbt.com/">Bangbang Yang</a>,
+              <a href="https://shenyujun.github.io/">Yujun Shen</a>,
+              <a href="http://www.cad.zju.edu.cn/home/bao/">Hujun Bao</a>,
+              <a href="https://www.zhangyinda.com/">Yinda Zhang</a>,
+              <a href="https://zhpcui.github.io/">Zhaopeng Cui</a>,
+              <a href="http://www.cad.zju.edu.cn/home/gfzhang/">Guofeng Zhang</a>
+              <br>
+              <em>TPAMI</em>, 2025
+              <br>
+              <a href="https://zju3dv.github.io/neumeshplusplus/">project page</a>
+              /
+              <a href="https://arxiv.org/abs/2606.19316">arXiv</a>
+              /
+              <a href="https://github.com/zju3dv/NeuMeshPlusPlus">code</a>
+              <p></p>
+              <p>We extend neural mesh-based implicit fields with geometry, texture, and semantic controls for versatile, efficient, and interactive volumetric editing.</p>
+            </td>
+          </tr>
 
           <tr onmouseout="free360_stop()" onmouseover="free360_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
@@ -142,7 +433,7 @@ My research interests are in 3D computer vision and AR/VR, specifically neural r
               <a href="https://openreview.net/profile?id=~Weihong_Pan1">Weihong Pan</a>,
               <strong>Chong Bao</strong>,
               <a href="https://github.com/xyzhang77">Xiyu Zhang</a>,
-              <a href="">Xiaojun Xiang</a>,
+              <a href="https://chobao.github.io/">Xiaojun Xiang</a>,
               <a href="https://sorcererq.github.io/jianghanqing/">Hanqing Jiang</a>,
               <a href="http://www.cad.zju.edu.cn/home/bao/">Hujun Bao</a>,
 
@@ -397,8 +688,8 @@ a novel semantic-driven NeRF editing approach, which enables users to edit a neu
               <br>
               <a href="https://github.com/oneLOH">Zhichao Ye</a>, 
               <strong>Chong Bao</strong>,
-              <a href="">Xin Zhou</a>,
-              <a href="">Haomin Liu</a>,
+              <a href="https://chobao.github.io/">Xin Zhou</a>,
+              <a href="https://chobao.github.io/">Haomin Liu</a>,
               <a href="http://www.cad.zju.edu.cn/home/bao/">Hujun Bao</a>,
               <a href="http://www.cad.zju.edu.cn/home/gfzhang/">Guofeng Zhang</a>
               <br>
@@ -499,7 +790,7 @@ and registration dependency to describe the image connection
               <br>
               <a href="https://github.com/oneLOH">Zhichao Ye</a>, 
               <strong>Chong Bao</strong>,
-              <a href="">Xinyang Liu</a>,
+              <a href="https://chobao.github.io/">Xinyang Liu</a>,
               <a href="http://www.cad.zju.edu.cn/home/bao/">Hujun Bao</a>,
               <a href="https://zhpcui.github.io/">Zhaopeng Cui</a>,
               <a href="http://www.cad.zju.edu.cn/home/gfzhang/">Guofeng Zhang</a>
@@ -542,10 +833,10 @@ map.
                 <papertitle>ARCargo: Multi-Device Integrated Cargo Loading Management System with Augmented Reality</papertitle>
               </a>
               <br>
-              <a href="">Tianxiang Zhang*</a>, 
+              <a href="https://chobao.github.io/">Tianxiang Zhang*</a>,
               <strong>Chong Bao*</strong>,
               <a href="https://zhaihongjia.github.io/">Hongjia Zhai*</a>,
-              <a href="">Jiazhen Xia</a>,
+              <a href="https://chobao.github.io/">Jiazhen Xia</a>,
               <a href="https://ywcmaike.github.io/">Weicai Ye</a>,
               <a href="http://www.cad.zju.edu.cn/home/gfzhang/">Guofeng Zhang</a>
               <br>
@@ -573,15 +864,35 @@ We present a multi-device integrated cargo loading management system with AR, wh
         </tbody></table>
         <table width="100%" align="center" border="0" cellpadding="20"><tbody>
           <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/inspatio-logo.png" alt="Inspatio" width="160"></td>
+            <td width="75%" valign="center">
+              Research Intern
+              <br>Inspatio
+              <br>2026.08-2026.09
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/ant_group.png" alt="Ant Group" width="160"></td>
+            <td width="75%" valign="center">
+              Research Intern
+              <br>Ant Group, <a href="https://www.robbyant.com/">Robbyant/Lingbot</a>
+              <br>2026.02-2026.08
+            </td>
+          </tr>
+
+          <tr>
             <!-- <td style="padding:20px;width:25%;vertical-align:middle"><img src="images/sensetime_lego.png"></td> -->
             <td style="padding:20px;width:25%;vertical-align:middle">
               <img src="images/google.png" alt="google" width="160"></td>
             <td width="75%" valign="center">
               <!-- <a >[2020.07-2020.09]  Computer Vision Algorithm Intern, Multi-sensor Fusion Localization Group, Sensetime</a> -->
               Student Researcher
-              <br><a href="https://arvr.google.com/">Google AR</a>
+              <br><a href="https://arvr.google.com/">Google XR</a>
               <br>
-              2025.03-now
+              2025.03-2025.11
             </td>
           </tr>
 
